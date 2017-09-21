@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="shortcut icon" href="{% static 'Home.png' %}" type="image/x-icon">
+        <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <title>니집내집-현재 열린 글타래</title>
+        <link rel="icon" href="{% static 'Home.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="first.html" target="_self"><img src="{% static 'Home.png' %}" width="150" alt="니집내집로고"></a>
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus">글타래추가하기</span></a>
+            <h1><a href="/">현재 열린 글타래</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

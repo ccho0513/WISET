@@ -1,0 +1,51 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+    font-family: 'Nanum Gothic', cursive;
+    background-color: #dcdcdc;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    zoom: 1;
+    /* ie 5,6,7 bug fix */
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+a:visited {
+    color: inherit;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+}
+
+#header .top-menu .glyphicon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main #insert_tarae .btn-insert {
+    font-family: 'Nanum Gothic', cursive;
+    width: 100px;
+}
+
+#main #display_tarae .col-md-8 {
+    background-color: #fff;
+    font-family: 'Nanum Gothic', cursive;
+    width: 200px;
+    text-align: left;
+
+}
